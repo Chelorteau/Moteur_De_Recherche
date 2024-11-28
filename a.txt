@@ -1,0 +1,9 @@
+    if articles:
+        for article in articles:
+            # Utiliser unidecode pour nettoyer les caractères spéciaux
+            title = unidecode(article['title'])
+            description = unidecode(article['description'])
+            print(f"Title: {title}")
+            print(f"Description: {description}")
+            print(f"URL: {article['url']}")
+            print("="*40)
