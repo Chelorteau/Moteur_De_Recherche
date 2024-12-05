@@ -2,7 +2,10 @@ import classNewsApi as news
 from dotenv import load_dotenv
 import os
 import json
+import requests
+from bs4 import BeautifulSoup
 import pickle
+import pandas as pd
 
 ##### CREATION D'ARTICLES #####
 
@@ -15,8 +18,8 @@ api_key = os.getenv("NEWSAPI_KEY")
 # Créer une instance de la classe NewsAPIClient
 news_client = news.NewsAPIClient(api_key)
 
-# Rechercher  d'articles sur le thème "intelligence artificielle"
-articles = news_client.search_news("intelligence artificielle", page_size=100)
+# Rechercher d'articles sur le thème "intelligence artificielle"
+articles = news_client.search_news("intelligence artificielle", page_size=10)
 
 ##### RECUPERATION DU CONTENU COMPLET #####
 
@@ -33,7 +36,7 @@ def get_full_content(url):
             return "Impossible de récupérer le contenu. Erreur HTTP."
     except Exception as e:
         return f"Erreur lors de la récupération du contenu : {e}"
-    
+
 # Ajouter le contenu complet à chaque article
 for article in articles:
     url = article.get('url')
@@ -42,25 +45,35 @@ for article in articles:
     else:
         article['full_content'] = "URL non disponible."
 
+
+### Data frame
+dfArticles = pd.DataFrame(articles)
+
+# afficher colonnes
+print(dfArticles.columns)
+
+# affocher la collone 'full_content'
+print(dfArticles['full_content'])
+
+
 ##### SAUVEGARDE D'ARTICLES #####
 
-# Enregistrer les articles dans un fichier pickle
+## Save 
 with open("articles.pkl", "wb") as f:
-   pickle.dump(articles, f)
+    pickle.dump(dfArticles, f)
 
-# Charger les articles depuis le fichier pickle
+# Open  
 with open("articles.pkl", "rb") as f:
-   articles = pickle.load(f)
+    articlesPickel = pickle.load(f)
 
-##### MANIPULATION D'ARTICLES #####
+print("Les articles avec leur contenu complet ont été sauvegardés dans 'articles.pkl'.")
 
-# Pour chaque document, affichez le nombre de mots et de phrases. Pour cela, vous utiliserez la onction split 
-
-# nb de mots et de phrases
-for article in articles:
-    contenu = article['content']
+# Nombre de mots et de phrases dans chaque article
+for index, row in articlesPickel.iterrows():
+    contenu = row['full_content'] 
     mots = contenu.split()
     phrases = contenu.split('.')
+    print(f"Article {index + 1}:")
     print(f"Nombre de mots : {len(mots)}")
     print(f"Nombre de phrases : {len(phrases)}")
     print()

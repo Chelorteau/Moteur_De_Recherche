@@ -1,0 +1,132 @@
+[
+    {
+        "source": {
+            "id": null,
+            "name": "Journal du geek"
+        },
+        "author": "Jason Filankembo",
+        "title": "Pokémon GO : vos parties entraînent une IA générative innovante de Niantic",
+        "description": "Niantic, le studio de développement de Pokémon GO, obtient des données pour entraîner sa nouvelle intelligence artificielle générative géospatiale grâce à Pokémon GO.",
+        "url": "https://www.journaldugeek.com/2024/11/25/pokemon-go-vos-parties-entrainent-ia-generative-innovante-niantic/",
+        "urlToImage": "https://www.journaldugeek.com/app/uploads/2024/11/Pokemon-GO-2.jpg",
+        "publishedAt": "2024-11-25T14:03:03Z",
+        "content": "Souvenez-vous de la frénésie suscitée par Pokémon GO lors de son lancement à l’été 2016. Le jeu vidéo mobile basé sur la réalité augmentée poussait les joueurs à courir dans la rue et à prendre tous … [+2455 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Presse-citron"
+        },
+        "author": "Jean-Yves Alric",
+        "title": "Intelligence artificielle : que va changer l’élection de Donald Trump pour l’industrie ?",
+        "description": "La victoire du républicain pourrait apporter du changement dans le secteur de l’IA.",
+        "url": "https://www.presse-citron.net/intelligence-artificielle-que-va-changer-lelection-de-donald-trump-pour-lindustrie/",
+        "urlToImage": "https://www.presse-citron.net/app/uploads/2024/03/donald-trump.jpg",
+        "publishedAt": "2024-11-07T11:26:18Z",
+        "content": "Cest confirmé, Donald Trump sera bien de retour à la Maison-Blanche en janvier prochain. Sa victoire entraîne dimportants changements dans le monde de la Tech, et notamment de lintelligence artificie… [+2723 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Les Numériques"
+        },
+        "author": "Benoit Bayle",
+        "title": "Actualité : Amazon annonce Nova, sa propre intelligence artificielle",
+        "description": "Au cours de sa conférence re:Invent du 3 décembre 2025, la division cloud d'Amazon (AWS) a annoncé de nouveaux modèles d'intelligence artificielle générative, tous affublés du nom Nova.",
+        "url": "https://www.lesnumeriques.com/intelligence-artificielle/amazon-annonce-nova-sa-propre-intelligence-artificielle-n230431.html",
+        "urlToImage": "https://cdn.lesnumeriques.com/optim/news/23/230431/d67a5c5c-amazon-annonce-nova-sa-propre-intelligence-artificielle__1200_678__0-47-2550-1385.jpg",
+        "publishedAt": "2024-12-04T07:01:00Z",
+        "content": "Amazon annonce Nova, sa propre intelligence artificielle\r\n© Amazon\r\nLa filiale cloud d'Amazon, Amazon Web Services (AWS) a annoncé hier ses propres modèles d'intelligence artificielle générative, rej… [+2694 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Presse-citron"
+        },
+        "author": "Camille Coirault",
+        "title": "Découvrez iOS 18.2 : les surprises que réserve cette mise à jour majeure",
+        "description": "La version bêta d'iOS 18.2 dévoile enfin ses atouts, notamment en matière d'intelligence artificielle.",
+        "url": "https://www.presse-citron.net/decouvrez-ios-18-2-les-surprises-que-reserve-cette-mise-a-jour-majeure/",
+        "urlToImage": "https://www.presse-citron.net/app/uploads/2024/04/logo-ios-18-iphone.webp",
+        "publishedAt": "2024-11-07T09:32:59Z",
+        "content": "Lancé simultanément avec l’iPhone 16, iOS 18 embarquait déjà avec lui un paquet de nouveautés. Apple franchit une nouvelle étape dans son calendrier de déploiement de cette nouvelle mouture en dévoil… [+3503 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Les Numériques"
+        },
+        "author": "Benoit Bayle",
+        "title": "Actualité : Meta autorise l'utilisation de son intelligence artificielle par l'armée américaine",
+        "description": "Grâce à sa nature open source qui le distingue de la concurrence, le modèle Llama rencontre déjà un beau succès auprès des développeurs et des gouvernements du monde entier. Mais voilà, l'intelligence artificielle de Meta ne va pas s'arrêter là : elle devient…",
+        "url": "https://www.lesnumeriques.com/societe-numerique/meta-autorise-l-utilisation-de-son-intelligence-artificielle-par-l-armee-americaine-n228406.html",
+        "urlToImage": "https://cdn.lesnumeriques.com/optim/news/22/228406/7a992cbd-meta-autorise-l-utilisation-de-son-intelligence-artificielle-par-l-armee-americaine__1200_678__0-44-1500-831.jpg",
+        "publishedAt": "2024-11-05T07:22:00Z",
+        "content": "Ce mardi 5 novembre, Meta a annoncé rendre Llama disponible aux agences gouvernementales américaines, cela incluant également les agences dédiées à la défense et à la sécurité nationale. Meta justifi… [+2030 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Les Numériques"
+        },
+        "author": "Antoine Roche",
+        "title": "Actualité : OpenAI : mécontent, un collectif d'artistes fait fuiter Sora, le générateur de vidéos par intelligence artificielle",
+        "description": "OpenAI va visiblement devoir revoir ses plans autour de Sora, son outil de génération de vidéos par IA : des artistes ont décidé de manifester contre les pratiques de la société en faisant fuiter l'outil avant son lancement.",
+        "url": "https://www.lesnumeriques.com/intelligence-artificielle/openai-mecontent-un-collectif-d-artistes-fait-fuiter-sora-le-generateur-de-videos-par-intelligence-artificielle-n230053.html",
+        "urlToImage": "https://cdn.lesnumeriques.com/optim/news/23/230053/8ae86af2-openai-mecontent-un-collectif-d-artistes-fait-fuiter-sora-le-generateur-de-videos-par-intelligence-artificielle__1200_678__0-7-2558-1349.jpg",
+        "publishedAt": "2024-11-27T13:41:00Z",
+        "content": "Une capture d'une vidéo prétendument créée par Sora.\r\n© @slow_developer sur X/OpenAI\r\nEn février dernier, OpenAI dévoilait Sora, un modèle d'intelligence artificielle capable de générer des vidéos à … [+2668 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Journal du geek"
+        },
+        "author": "Olivier",
+        "title": "Avec la « machine à laver humaine » japonaise, on est propre en 15 minutes",
+        "description": "À l’Expo Osaka 2025, une invention emblématique des années 70 fait son grand retour : la machine à laver humaine (!), réinventée avec des technologies d'aujourd'hui. Le dispositif, qui combine immersion, intelligence artificielle et bien-être, annonce une exp…",
+        "url": "https://www.journaldugeek.com/2024/11/30/avec-la-machine-a-laver-humaine-japonaise-on-est-propre-en-15-minutes/",
+        "urlToImage": "https://www.journaldugeek.com/app/uploads/2024/11/machine-a-laver-humaine.jpg",
+        "publishedAt": "2024-11-30T16:04:30Z",
+        "content": "Tous ceux qui ont visité lExposition universelle dOsaka en 1970, se rappelle évidemment de cette invention qui semblait tout droit sortie dun film de science-fiction : une machine à laver humaine ! C… [+2449 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Journal du geek"
+        },
+        "author": "Jason Filankembo",
+        "title": "Motorola lance les trois premières fonctions de Moto AI en version bêta",
+        "description": "Moto AI est disponible dans le cadre du premier programme bêta lancé par Motorola. Les fonctionnalités disponibles sont pour le moment assez classiques.",
+        "url": "https://www.journaldugeek.com/2024/11/28/motorola-lance-trois-premieres-fonctions-moto-ai-beta/",
+        "urlToImage": "https://www.journaldugeek.com/app/uploads/2024/11/Moto-AI.jpg",
+        "publishedAt": "2024-11-28T16:07:19Z",
+        "content": "La sortie de Galaxy AI représente un tournant majeur dans l’histoire récente de Samsung. L’intelligence artificielle offre de nombreuses possibilités inédites aux possesseurs de smartphones compatibl… [+2498 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Presse-citron"
+        },
+        "author": "Setra",
+        "title": "Un futur sans clics ni touches : cette IA redéfinit la façon dont on utilise les ordinateurs",
+        "description": "Dans un avenir proche, on pourra demander à une intelligence artificielle de réaliser des tâches sur notre PC, sans toucher aux claviers et à la souris. En s’appuyant sur une nouveauté d’Anthropic, la startup Hume AI donne un aperçu de ce qui sera possible.",
+        "url": "https://www.presse-citron.net/un-futur-sans-clics-ni-touches-cette-ia-redefinit-la-facon-dont-on-utilise-les-ordinateurs/",
+        "urlToImage": "https://www.presse-citron.net/app/uploads/2024/04/DSC03566.jpg",
+        "publishedAt": "2024-11-29T10:31:20Z",
+        "content": "Grâce à leur capacité à répondre à nos questions, les modèles dintelligence artificielle générative sont déjà très utiles. Cependant, une nouvelle génération dIA se prépare. Et celle-ci ne se content… [+3593 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Frandroid"
+        },
+        "author": "Corentin Béchade",
+        "title": "Les ambitions en intelligence artificielle de Facebook stoppées par des abeilles",
+        "description": "Alors que la course à l’IA bat son plein, Meta vient de subir un revers important. L’entreprise, qui voulait se tourner vers l’énergie nucléaire pour alimenter ses systèmes, a vu ses ambitions stoppées par des considérations écologiques.",
+        "url": "https://www.frandroid.com/marques/meta/2391922_les-ambitions-en-intelligence-artificielle-de-facebook-stoppees-par-des-abeilles",
+        "urlToImage": "https://images.frandroid.com/wp-content/uploads/2014/09/Capture-d%E2%80%99%C3%A9cran-2014-09-15-%C3%A0-17.41.06-1000x532.png",
+        "publishedAt": "2024-11-05T09:50:00Z",
+        "content": "Alors que la course à l’IA bat son plein, Meta vient de subir un revers important. L’entreprise, qui voulait se tourner vers l’énergie nucléaire pour alimenter ses systèmes, a vu ses ambitions stoppé… [+3002 chars]"
+    }
+]
