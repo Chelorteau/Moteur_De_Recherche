@@ -14,7 +14,7 @@ import os
 import pickle
 import pandas as pd
 import streamlit as st
-
+import numpy as np
 
 ######|| MOTEUR DE RECHERCHE SUR L'INTELLIGENCE ARTIFICIELLE ||######
 
@@ -95,42 +95,73 @@ del SourceWithName
 with open("sources.pkl", "rb") as f:
     SourceWithName = pickle.load(f)
 
-# STATISTIQUES DES SOURCES #
+## AFFICHAGE AVEC STREAMLIT ##
+# lancer streamlit run .\main.py
 
-print("### STATISTIQUES DES SOURCES ###\n")
-
-for source_name, source_obj in SourceWithName.items():
-    n = 10
-    print(source_obj)
-    print("-" * 50)
-    print("Statistiques des documents:\n")
-    stats = source_obj.stats(n) 
-    print(f"Vocabulaire unique: {len(stats['vocabulaire'])} mots")
-    print(f"Les {n} mots les plus fréquents:")
-
-    print(stats['freq_table'].to_string(index=False)) 
-    
-    print("\n" + "=" * 80 + "\n")
-
-
-# MOTEUR DE RECHERCHE
-
-# Initialisation avec SourceWithName
 search_engine = SearchEngine(SourceWithName)
 
-# Effectuer une recherche
-# Ex : Recherche pour "IA"
-resultats = search_engine.search("IA", nb_doc=6)
+# Titre de l'application
+st.title("Moteur de recherche sur l'intelligence artificielle")
 
-# Afficher les résultats
-print(f"Résultats de la recherche pour 'IA' :")
-for doc, score in resultats:
-    print(f"Titre : {doc.titre}")
-    print(f"Score : {score:.4f}")
-    print(f"URL : {doc.url}")
-    print("---")
+## STATS  GLOBAL ##
+    
+st.sidebar.title("STATISTIQUES")
+
+st.sidebar.subheader("Statistiques globales")
+st.sidebar.markdown(f"**Total de documents** : {len(search_engine.documents)}")
+st.sidebar.markdown(f"**Taille du vocabulaire** : {len(search_engine.vocab)}")
+
+# Saisie des mots-clés par l'utilisateur
+query = st.text_input("Entrez les mots-clés à rechercher :", "")
+
+# Vérifier si une requête est saisie
+if query:
+    # Effectuer une recherche
+    _, total_docs = search_engine.search(query, nb_doc=1)
+
+    # Barre de défilement pour le nombre de documents à retourner
+    x = st.slider(
+        "Nombre de documents à afficher :",
+        min_value=1,
+        max_value=total_docs,
+        value=3,
+        step=1,
+        format="%d"
+    )
+    # Afficher les résultats
+    resultats, _ = search_engine.search(query, nb_doc=x)
+    st.subheader(f"Résultats pour : '{query}'")
+    if resultats:
+        for doc, score in resultats:
+            st.markdown(f"### {doc.titre}")
+            st.markdown(f"- **Score** : {score:.4f}")
+            st.markdown(f"- [Lire l'article]({doc.url})")
+            st.markdown("---")
+    else:
+        st.write("Aucun résultat trouvé.")
 
 
+    ## STATS ##
+
+    st.sidebar.subheader(f"Statistiques pour '{query}'")
+    word_stats = search_engine.get_word_stats(query)  
+
+    if word_stats:
+        st.sidebar.markdown(f"- **Occurrences totales** : {word_stats['occurrences']}")
+        st.sidebar.markdown(f"- **Documents contenant ce mot** : {word_stats['document_frequency']}")
+    else:
+        st.sidebar.write("Aucune statistique disponible pour ce mot.")
+
+    # Top mots fréquents
+    st.sidebar.subheader("Top 5 des mots fréquents")
+    top_words = sorted(search_engine.vocab.items(), key=lambda x: x[1]['occurrences'], reverse=True)[:5]
+    for word, info in top_words:
+        st.sidebar.markdown(f"- {word} : {info['occurrences']} occurrences")
+
+
+
+
+    
 
 
 
